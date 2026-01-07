@@ -74,7 +74,7 @@ export default function AnalyticsPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <Card className="lg:col-span-2" title="Predicted vs Actual Recovery" subtitle="30-day look-ahead analysis based on historical patterns">
-                    <div className="h-[350px] w-full pt-6">
+                    <div className="h-[350px] min-h-[350px] w-full pt-6">
                         <ResponsiveContainer width="100%" height="100%">
                             <ComposedChart data={predictionData}>
                                 <XAxis dataKey="day" axisLine={false} tickLine={false} tick={{ fill: '#64748B', fontSize: 12 }} dy={10} />
@@ -93,7 +93,7 @@ export default function AnalyticsPage() {
                 </Card>
 
                 <Card title="Success Rate by Industry" subtitle="AI performance tracking by customer segment">
-                    <div className="h-[350px] w-full pt-6">
+                    <div className="h-[350px] min-h-[350px] w-full pt-6">
                         <ResponsiveContainer width="100%" height="100%">
                             <BarChart data={segmentData} layout="vertical">
                                 <XAxis type="number" hide />
@@ -142,7 +142,7 @@ export default function AnalyticsPage() {
                 </Card>
 
                 <Card title="Portfolio Risk Pipeline" subtitle="Ageing vs Amount Concentration Analysis">
-                    <div className="h-[300px] w-full pt-6">
+                    <div className="h-[300px] min-h-[300px] w-full pt-6">
                         {/* Simplified placeholder for a complex scatter chart */}
                         <ResponsiveContainer width="100%" height="100%">
                             <ScatterChart>

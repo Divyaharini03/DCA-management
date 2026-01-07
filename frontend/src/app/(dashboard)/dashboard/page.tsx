@@ -88,7 +88,7 @@ export default function DashboardPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Recovery Trend Graph */}
                 <Card className="lg:col-span-2" title="Recovery Trend" subtitle="Monthly recovery amount in Millions ($)">
-                    <div className="h-[300px] w-full pt-4">
+                    <div className="h-[300px] min-h-[300px] w-full pt-4">
                         <ResponsiveContainer width="100%" height="100%">
                             <AreaChart data={recoveryData}>
                                 <defs>
@@ -128,7 +128,7 @@ export default function DashboardPage() {
 
                 {/* Ageing Bucket */}
                 <Card title="Ageing Distribution" subtitle="Portfolio split by invoice age">
-                    <div className="h-[300px] w-full flex flex-col items-center justify-center">
+                    <div className="h-[300px] min-h-[300px] w-full flex flex-col items-center justify-center">
                         <ResponsiveContainer width="100%" height={200}>
                             <PieChart>
                                 <Pie
